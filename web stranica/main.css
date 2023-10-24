@@ -1,0 +1,213 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.gornji {
+	border-bottom: 3px solid #dd0022;
+}
+
+.page{
+border: 0px solid black;	
+}
+
+.donji
+{
+	border-top: 3px solid red; 
+	background-color:dd0022;
+	
+}
+
+.kolona{
+ border: 0px solid black; 
+ margin: 0px auto;
+ width: 1000px;
+}
+
+.page .kolona {
+	height: 100vh;
+}
+
+#logo {
+display: flex;	
+}
+
+#logoslike {
+flex-grow: 1;
+}
+
+#ikone {
+flex-grow: 1;
+text-align: right;
+}
+
+#main-menu{
+	display: flex;
+}
+
+#main-menu a{
+flex-grow: 1;
+text-align: center;
+display: block;
+padding: 10px;
+text-decoration: none;
+color: #dd0022;
+transition: 450ms;
+
+}
+#main-menu a:hover {
+	color: #ffffff;
+	background: #dd0022;
+	 transition: color 0.4s;
+	
+}
+
+
+#main-menu a:active {	
+	color: #ffffff;
+	background: #dd0022;
+}
+
+
+
+#ikone a{
+text-decoration: none;
+margin: 7px;
+}	
+
+
+#pocetna {
+	text-align: center;
+	background-color: #fffaf0;
+	background-size: cover;
+}
+
+#pocetna h1{
+font-size: 51px;
+margin-top: 0px;
+padding-top: 50px;	
+	
+}
+
+
+.donji .donji-kolona {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.donji> .kolona {
+display: flex;
+font-size: 20px;
+}
+
+
+.align-left{
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;	
+}
+
+.align-right {
+	text-align: right;
+}
+
+
+
+/* Example CSS for styling the audio player */
+audio {
+   width: 100%;
+   max-width: 300px; /* Adjust to your desired width */
+}
+
+audio::-webkit-media-controls {
+   display: none; /* Hide default controls in Safari and Chrome */
+}
+
+
+#prikazi-poruku {
+    display: none;
+}
+
+.poruka {
+    display: none;
+}
+#prikazi-poruku:checked + .poruka {
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    width: 300px; /* Prilagodite veličinu spremišta prema vašim potrebama */
+    height: 200px; /* Prilagodite veličinu spremišta prema vašim potrebama */
+    overflow: hidden;
+}
+
+.fading-image {
+    max-width: 70%;
+    height: auto;
+    transition: opacity 3s;
+}
+
+.fading-image:hover {
+    opacity: 0;
+}
+
+
+.decorative-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+.decorative-button::after {
+    content: "Hello";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff0000; /* Crvena boja */
+    color: #fff;
+    display: none;
+    text-align: center;
+    line-height: 40px; /* Prilagodite ovisno o visini dugmeta */
+    border-radius: 5px;
+}
+
+.decorative-button:hover::after {
+    display: block;
+}
+
+
+.hidden-checkbox {
+    display: none;
+}
+
+.decorative-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.hello-message {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    color: #ff0000; /* Crvena boja */
+}
+
+.hidden-checkbox:checked + .decorative-button + .hello-message {
+    display: block;
+}

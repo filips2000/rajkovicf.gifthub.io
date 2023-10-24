@@ -1,0 +1,129 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.gornji {
+	border-bottom: 3px solid #dd0022;
+}
+
+.page{
+border: 0px solid black;	
+}
+
+.donji
+{
+	border-top: 3px solid red; 
+	background-color:dd0022;
+	
+}
+
+.kolona{
+ border: 0px solid black; 
+ margin: 0px auto;
+ width: 1000px;
+}
+
+.page .kolona {
+	height: 100vh;
+}
+
+#logo {
+display: flex;	
+}
+
+#logoslike {
+flex-grow: 1;
+}
+
+#ikone {
+flex-grow: 1;
+text-align: right;
+}
+
+#main-menu{
+	display: flex;
+}
+
+#main-menu a{
+flex-grow: 1;
+text-align: center;
+display: block;
+padding: 10px;
+text-decoration: none;
+color: #dd0022;
+transition: 450ms;
+
+}
+#main-menu a:hover {
+	color: #ffffff;
+	background: #dd0022;
+}
+
+
+#main-menu a:active {	
+	color: #ffffff;
+	background: #dd0022;
+}
+
+
+
+#ikone a{
+text-decoration: none;
+margin: 7px;
+}	
+
+
+#pocetna {
+	text-align: center;
+	background-color: #fffaf0;
+	background-size: cover;
+}
+
+#pocetna h1{
+font-size: 51px;
+margin-top: 0px;
+padding-top: 50px;	
+	
+}
+
+
+.donji .donji-kolona {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.donji> .kolona {
+display: flex;
+font-size: 20px;
+}
+
+
+.align-left{
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;	
+}
+
+.align-right {
+	text-align: right;
+}
+
+
+
+/* Example CSS for styling the audio player */
+audio {
+   width: 100%;
+   max-width: 300px; /* Adjust to your desired width */
+}
+
+audio::-webkit-media-controls {
+   display: none; /* Hide default controls in Safari and Chrome */
+}
+
+
